@@ -1,0 +1,55 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+{% block title %}Contact Us{% endblock %}
+{% block content %}
+
+<section class="contact-hero" style="background-image: url({% static 'images/grid2.png' %});">
+  <div class="contact-hero-content">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you — reach out anytime.</p>
+  </div>
+</section>
+
+<section class="contact-section wrapper">
+  <div class="contact-info">
+    <h2>Get in Touch</h2>
+    <p>Have questions or feedback about Vision 2030? Connect with us below.</p>
+
+    <div class="contact-item">
+      <span class="material-symbols-outlined">mail</span>
+      <div>
+        <h3>Email</h3>
+        <p><a href="mailto:info@vision2030.sa">info@vision2030.sa</a></p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <span class="material-symbols-outlined">call</span>
+      <div>
+        <h3>Phone</h3>
+        <p><a href="tel:+966123456789">+966 12 345 6789</a></p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <span class="material-symbols-outlined">location_on</span>
+      <div>
+        <h3>Address</h3>
+        <p>Ministry of Economy and Planning, Riyadh, Saudi Arabia</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <h2>Send a Message</h2>
+    <form method="post">
+      {% csrf_token %}
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="projects-btn">Send</button>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

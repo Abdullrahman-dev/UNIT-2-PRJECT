@@ -1,0 +1,98 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+{% block title %}NEOM{% endblock %}
+{% block content %}
+
+    <div class="neom-header">
+        <video autoplay loop muted playsinline class="background-neom-video">
+            <source src="{% static 'videos/neom.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag
+        </video>
+        <h1>NEOM</h1>
+        <button class="discover-btn">
+            <span class="material-symbols-outlined">explore</span>
+            Discover the Vision
+        </button>
+        <!-- <p>A bold vision for the future — NEOM represents Saudi Arabia's ambition to redefine sustainable living, technology, and innovation on a global scale. Designed to be a beacon of progress, NEOM is more than just a city — it's a blueprint for tomorrow.</p> -->
+    </div>
+
+    <!-- May be i will but a slider with NEOM project here  -->
+    
+    <section class="about-neom">
+        <div class="text-about-neom">
+            <h1>Welcome to NEOM</h1>
+            <p>A bold vision for the future — NEOM represents Saudi Arabia's ambition to redefine sustainable living, technology, and innovation on a global scale. Designed to be a beacon of progress, NEOM is more than just a city — it's a blueprint for tomorrow.</p>
+        </div>
+        <img src="{% static 'images/neom/neom.png' %}" alt="">
+    </section>
+
+    <section class="neom-oxagon-project">
+        <img src="{% static 'images/neom/ox.png' %}" alt="">
+        <div class="text-about-oxagon">
+            <h1>OXAGON</h1>
+            <p>OXAGON is the world's largest floating industrial city and the industrial heart of NEOM. It's designed to be a global hub for advanced manufacturing, clean energy, logistics, and technology — all powered by renewable energy.</p>
+        </div>
+    </section>
+
+
+    <section class="neom-trojena-project">
+        <div class="text-about-trojena">
+            <h1>TROJENA</h1>
+            <p>TROJENA is NEOM's futuristic mountain resort — where nature, adventure, and luxury meet. It's the first outdoor ski destination in the Arabian Peninsula, blending modern architecture with breathtaking mountain landscapes.</p>
+        </div>
+        <img src="{% static 'images/neom/tj.png' %}" alt="">
+    </section>  
+
+    
+    <section class="neom-principles">
+        <p class="section-subtitle">Core Principles</p>
+        <h1 class="section-title">Human-Centered • Sustainable • Innovative</h1>    
+
+        <div class="row-principles">
+            <div class="principle-card">
+                <h2>People First</h2>
+                <p>NEOM is built around human well-being — walkable communities, green spaces, and AI-enhanced services for a better quality of life.</p>
+            </div>
+            <div class="principle-card">
+                <h2>Sustainability</h2>
+                <p>Operating on 100% renewable energy from solar, wind, and hydrogen, NEOM aims for zero emissions and zero waste.</p>
+            </div>
+            <div class="principle-card">
+                <h2>Innovation</h2>
+                <p>From autonomous mobility to digital governance, NEOM embraces cutting-edge technology to shape a smarter world.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="glance-section">
+        <p class="section-subtitle">At a Glance</p>
+        <h1 class="section-title">Transformative Scale</h1>
+
+        <div class="row-glance">
+            <div class="glance-card">
+                <h2>26,500 km²</h2>
+                <p>Total land area</p>
+            </div>
+            <div class="glance-card">
+                <h2>9 million +</h2>
+                <p>Planned residents</p>
+            </div>
+            <div class="glance-card">
+                <h2>95%</h2>
+                <p>Nature preserved</p>
+            </div>
+            <div class="glance-card">
+                <h2>$500 billion</h2>
+                <p>Total investment</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore-neom">
+        <h1>Explore NEOM's Vision</h1>
+        <p>Discover how The Line, OXAGON, and TROJENA are shaping the future of sustainable living.</p>
+        <a href="#" class="explore-btn">Visit NEOM Projects</a>
+    </section>
+
+{% endblock %}

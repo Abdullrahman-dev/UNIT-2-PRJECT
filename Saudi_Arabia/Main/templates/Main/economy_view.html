@@ -1,0 +1,48 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+{% block title %}Economy{% endblock %}
+{% block content %}
+
+    <section class="eco-hero" style="background-image: url({% static 'images/economy/hero.png' %});">
+        <div class="eco-hero-content">
+            <h1>Economy in 2030</h1>
+            <p>Empowering growth, innovation, and sustainability — driving Saudi Arabia toward a diversified future.</p>
+        </div>
+    </section>
+
+    <section class="eco-overview">
+        <div class="eco-overview-text">
+            <h2>A Vision for a Thriving Economy</h2>
+            <p>Saudi Arabia's Vision 2030 aims to create a vibrant, diversified economy that moves beyond oil dependence. Through investment in technology, tourism, renewable energy, and entrepreneurship, the Kingdom is unlocking new opportunities for sustainable prosperity.</p>
+        </div>
+        <img src="{% static 'images/economy/image.png' %}" alt="Economic growth illustration">
+    </section>
+
+    <section class="eco-sectors">
+        <h2>Key Growth Sectors</h2>
+        <div class="eco-sector-grid">
+            <div class="eco-sector">
+                <h3>Technology & Innovation</h3>
+                <p>Driving digital transformation through AI, smart cities, and high-tech industries.</p>
+            </div>
+            <div class="eco-sector">
+                <h3>Tourism & Culture</h3>
+                <p>Opening new global destinations that celebrate Saudi heritage and natural beauty.</p>
+            </div>
+            <div class="eco-sector">
+                <h3>Renewable Energy</h3>
+                <p>Expanding solar and wind projects to power a cleaner, greener future.</p>
+            </div>
+            <div class="eco-sector">
+                <h3>Entrepreneurship</h3>
+                <p>Empowering young innovators and startups to shape the next era of growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="eco-future">
+        <h2>Building a Sustainable Future</h2>
+        <p>By 2030, Saudi Arabia's economy will stand as a global model for balance between progress and sustainability. Through strategic partnerships, technological leadership, and human potential, the Kingdom is redefining the future of economic prosperity.</p>
+    </section>
+
+{% endblock %}

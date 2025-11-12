@@ -1,0 +1,52 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+{% block title %}The Line{% endblock %}
+{% block content %}
+
+    <!-- === HERO SECTION === -->
+    <section class="line-hero" style="background-image: url({% static 'images/the_line/hero.png'%});">
+        <div class="line-hero-content">
+            <h2>The City Without Limits</h2>
+            <p>A revolution in urban design — where nature, technology, and humanity exist in perfect harmony.</p>
+        </div>
+    </section>
+
+    <!-- === VISION SECTION === -->
+    <section class="line-vision">
+        <div class="line-vision-content">
+            <h3>Building the Impossible</h3>
+            <p>Stretching across 170 kilometers, THE LINE reimagines what a city can be. No cars, no streets, and zero emissions — just pure connection between people and nature. It’s powered entirely by renewable energy and built with sustainability at its heart.</p>
+        </div>
+        <img src="{% static 'images/The-Line.png'%}" alt="The Line city design">
+    </section>
+
+    <!-- === FEATURES SECTION === -->
+    <section class="line-features">
+        <h3>What Makes THE LINE Unique</h3>
+        <div class="line-feature-grid">
+            <div class="line-feature">
+                <h4>Vertical Living</h4>
+                <p>All daily needs — schools, parks, and workplaces — are within a 5-minute walk.</p>
+            </div>
+            <div class="line-feature">
+                <h4>Zero Carbon</h4>
+                <p>The city runs on 100% renewable energy with zero pollution.</p>
+            </div>
+            <div class="line-feature">
+                <h4>AI-Powered Life</h4>
+                <p>Advanced AI systems enhance mobility, healthcare, and sustainability.</p>
+            </div>
+            <div class="line-feature">
+                <h4>Connected Communities</h4>
+                <p>High-speed transport connects residents end-to-end in under 20 minutes.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="line-future">
+        <h3>A Glimpse Into the Future</h3>
+        <p>THE LINE represents a bold step toward a smarter, cleaner, and more inclusive world. It's not just a city — it's a new way of living that prioritizes the well-being of people and the planet.</p>
+    </section>
+
+{% endblock %}

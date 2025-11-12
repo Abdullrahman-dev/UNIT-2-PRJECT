@@ -1,0 +1,51 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+{% block title %}The Red Sea{% endblock %}
+{% block content %}
+
+    <section class="red-hero" style="background-image: url({% static 'images/red_sea/hero2.png' %});">
+        <div class="red-hero-content">
+            <h1>The Red Sea Project</h1>
+            <p>A luxury regenerative tourism destination along Saudi Arabia's west coast — where pristine nature meets sustainable innovation.</p>
+        </div>
+    </section>
+
+    <section class="red-about">
+        <div class="red-about-text">
+            <h2>Where Nature Inspires the Future</h2>
+            <p>The Red Sea Project is one of the world's most ambitious regenerative tourism developments. 
+               Built across over 28,000 square kilometers of untouched islands, deserts, and mountains, it will set new standards for sustainable luxury travel — protecting the environment while offering unforgettable experiences.</p>
+        </div>
+        <img src="{% static 'images/red_sea/hero.png' %}" alt="Red Sea Islands">
+    </section>
+
+    <section class="red-features">
+        <h2>Key Highlights</h2>
+        <div class="red-feature-grid">
+            <div class="red-feature">
+                <h3>90+ Islands</h3>
+                <p>Carefully preserved natural habitats and coral reefs.</p>
+            </div>
+            <div class="red-feature">
+                <h3>100% Renewable</h3>
+                <p>Powered entirely by clean solar and wind energy.</p>
+            </div>
+            <div class="red-feature">
+                <h3>1 Million Visitors</h3>
+                <p>Expected annually, with strict sustainability limits.</p>
+            </div>
+            <div class="red-feature">
+                <h3>50+ Resorts</h3>
+                <p>Ultra-luxury hospitality blending modern comfort with nature.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="red-future">
+        <h2>Shaping a Global Tourism Landmark</h2>
+        <p>The Red Sea Project will redefine how destinations coexist with nature. 
+           With world-class architecture, crystal-clear waters, and a commitment to environmental balance, 
+           it stands as a cornerstone of Saudi Arabia's Vision 2030 — a model of harmony between progress and preservation.</p>
+    </section>
+
+{% endblock %}

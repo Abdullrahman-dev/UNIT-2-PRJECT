@@ -1,0 +1,60 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+{% block title %}Sustainability{% endblock %}
+{% block content %}
+
+
+    <!-- Here is nav bar -->
+
+    <section class="hero-sustainability-continer">
+        <img src="{% static 'images/sustainability/hero.png'%}" alt="">
+        <div class="sustainability-text">
+            <h1>Sustainability In <span>Saudi Arabia</span></h1>
+            <p>Saudi Arabia is leading a sustainable transformation under Vision 2030 — focusing on clean energy, environmental protection, and preserving nature for future generations.</p>
+        </div>
+        <!-- <img src="{% static 'images/sustainability/hero.png' %}" alt=""> -->
+    </section>
+
+    <div class="wrapper">
+        <section class="about-renewable-energy">
+            <h1>Renewable Energy</h1>
+            <p>Saudi Arabia is one of the world's fastest-growing renewable energy leaders. Through solar, wind, and hydrogen projects — such as NEOM's clean energy initiatives — the Kingdom is reducing carbon emissions and diversifying its energy sources.</p>
+        </section>
+
+        <section class="renewable-energy-projects">
+            <h1>Projects for renewable energy</h1>
+            <div class="grid-projects">
+                <div class="neom-green">
+                    <h1>NEOM Green Hydrogen Project</h1>
+                </div>
+                <div class="sakaka-solar-plant">
+                    <h1>Sakaka Solar Plant</h1>
+                </div>
+                <div class="dumat-al-jandal">
+                    <h1>Dumat Al Jandal Wind Farm</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-environmental-protection">
+            <h1>Environmental Protection</h1>
+            <p>Vision 2030 promotes preserving Saudi Arabia's natural landscapes — from deserts to coastlines — through reforestation, waste management, and biodiversity programs.</p>
+        </section>
+
+        <section class="key-initiatives">
+            <h1>Key programs</h1>
+            <div class="grid-projects">
+                <div class="saudi-green">
+                    <h1>Saudi Green Initiative</h1>
+                </div>
+                <div class="middle-east-plant">
+                    <h1>Middle East Green Initiative</h1>
+                </div>
+                <div class="national-program">
+                    <h1>National Recycling Program</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

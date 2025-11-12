@@ -1,0 +1,103 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+    <!-- Saudi Arabia Vision -->
+    <section class="hero-saudi">
+        <!-- May be i will put a vid as background here -->
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="{% static 'videos/2030.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag
+        </video>
+    </section>
+
+    <div class="wrapper">
+        
+        <!-- Header base.html -->
+
+        <!-- I will do a slider her for companies working on it -->
+
+        <section class="about-vision">
+            <div class="hero-continer">
+                <img src="{% static 'images/vision-header.png' %}" alt="">
+                <a href="#text-continer"><span class="material-symbols-outlined">keyboard_double_arrow_down</span></a>
+                <div class="text-continer" id="text-continer">
+                    <h1>Vision 2030: Shaping the Future of <span>Saudi Arabia</span></h1>
+                    <p>Saudi Vision 2030 is a national transformation plan that aims to diversify the Kingdom's economy, promote innovation, and enhance the quality of life. Through ambitious projects like NEOM, Qiddiya, and The Red Sea, Saudi Arabia is building a future driven by opportunity and creativity.</p>
+                </div>
+            </div>
+        </section>
+        <!-- About Vision 2030 Section -->
+        <section class="about-section">
+            <h1 class="header-h1">About Vision 2030</h1>
+            <div class="about-continer">
+                <div class="sustainability-continer">
+                    <h1>Sustainability</h1>
+                    <p>Saudi Vision 2030 promotes a greener future by investing in renewable energy, protecting natural resources, and supporting eco-friendly development across the Kingdom.</p>
+                    <form action="{% url 'sustainability_view' %}" method="get">
+                        <button class="projects-btn" type="submit">View Details</button>
+                    </form>
+                </div>
+                <div class="economy-continer">
+                    <h1>Economy Growth</h1>
+                    <p>The Vision aims to create new job opportunities, attract global investments, and empower local industries to build a thriving and diversified economy.</p>
+                    <form action="{% url 'economy_view' %}" method="get">
+                        <button class="projects-btn" type="submit">View Details</button>
+                    </form>
+                </div>
+                <div class="innovation-technology-continer">
+                    <h1>Innovation & Technology</h1>
+                    <p>Saudi Arabia is investing in research, smart cities, and cutting-edge technologies to drive digital transformation and inspire global innovation.</p>
+                    <!-- innovation_technology_view -->
+                    <form action="{% url 'innovation_technology_view' %}" method="get">
+                        <button class="projects-btn" type="submit">View Details</button>
+                    </form>
+                </div>
+                <div class="about-img">
+                    <img src="{% static 'images/grid.png' %}" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="featured-projects-section">
+            <div class="featured-projects-continer">
+                <h1>Featured Projects</h1>
+                <div class="neom-project">
+                    <div class="projects-header">
+                        <h1>NEOM</h1>
+                        <p>A futuristic city built on innovation, sustainability, and technology — redefining urban living for the next generation.</p>
+                        <form action="{% url 'neom_view' %}" method="get">
+                            <button class="projects-btn" type="submit">View Details</button>
+                        </form>
+                    </div>
+                    <img src="{% static 'images/NEOM.png' %}" alt="" class="neom-img">
+                </div>
+                <div class="the-line-project">
+                    <div class="projects-header">
+                        <h1>The Line</h1>
+                        <p>A 170 km-long linear city with zero cars, zero streets, and zero carbon emissions — designed for a sustainable future.</p>
+                        <form action="{% url 'the_line_view' %}" method="get">
+                            <button class="projects-btn" type="submit">View Details</button>
+                        </form>
+                    </div>
+                    <img src="{% static 'images/The-Line.png' %}" alt="" class="the-line-img">
+                </div>
+                <div class="the-red-sea-project">
+                    <div class="projects-header">
+                        <h1>The Red Sea</h1>
+                        <p>A world-class luxury destination combining nature, adventure, and sustainability — redefining global tourism in Saudi Arabia.</p>
+                        <form action="{% url 'the_red_sea' %}" method="get">
+                            <button class="projects-btn" type="submit">View Details</button>
+                        </form>
+                    </div>
+                    <img src="{% static 'images/red-sea.png' %}" alt="" class="the-red-sea-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+
+    </div>
+{% endblock %}

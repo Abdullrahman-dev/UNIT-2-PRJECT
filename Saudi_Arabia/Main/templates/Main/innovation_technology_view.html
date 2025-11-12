@@ -1,0 +1,51 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+{% block title %}Innovation & Technology{% endblock %}
+{% block content %}
+
+<section class="innov-hero" style="background-image: url({% static 'images/Ai/Ai.png' %});">
+    <div class="innov-hero-content">
+        <h1>Innovation & Technology</h1>
+        <p>Shaping a smarter future powered by creativity, research, and digital transformation.</p>
+    </div>
+</section>
+
+<section class="innov-about">
+    <div class="innov-text">
+        <h2>Driving the Digital Revolution</h2>
+        <p>Under Vision 2030, Saudi Arabia is accelerating innovation across all sectors. 
+           From AI research to smart cities, the Kingdom is building a knowledge-based economy 
+           powered by technology, youth, and sustainability.</p>
+    </div>
+    <img src="{% static 'images/Ai/image.png' %}" alt="Innovation lab">
+</section>
+
+<section class="innov-projects">
+    <h2>Technological Initiatives</h2>
+    <div class="innov-grid">
+        <div class="innov-card">
+            <h3>Smart Cities</h3>
+            <p>Developing intelligent urban systems in NEOM, Riyadh, and beyond for seamless living.</p>
+        </div>
+        <div class="innov-card">
+            <h3>AI & Robotics</h3>
+            <p>Investing in research centers that pioneer automation, robotics, and AI applications.</p>
+        </div>
+        <div class="innov-card">
+            <h3>Space Exploration</h3>
+            <p>Empowering Saudi astronauts and satellite programs to contribute to global space science.</p>
+        </div>
+        <div class="innov-card">
+            <h3>Digital Infrastructure</h3>
+            <p>Expanding 5G networks and cybersecurity to connect and protect the digital economy.</p>
+        </div>
+    </div>
+</section>
+
+<section class="innov-future">
+    <h2>Inspiring the Future</h2>
+    <p>Innovation and technology are at the heart of Saudi Arabia's Vision 2030 — transforming ambition into action, 
+       and imagination into progress. The Kingdom is not just adapting to the future, but defining it.</p>
+</section>
+
+{% endblock %}

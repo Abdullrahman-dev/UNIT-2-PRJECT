@@ -1,0 +1,54 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+{% block title %}About Saudi Vision 2030{% endblock %}
+{% block content %}
+
+<section class="about-hero" style="background-image: url({% static 'images/grid2.png' %});">
+  <div class="about-hero-content">
+    <h1>About Vision 2030</h1>
+    <p>Transforming ambition into action for a prosperous and sustainable future.</p>
+  </div>
+</section>
+
+<section class="about-main wrapper">
+  <div class="about-text">
+    <h2>The Vision</h2>
+    <p>
+      Saudi Vision 2030 is a bold blueprint for the Kingdom's future, launched to diversify
+      the economy, enhance quality of life, and create opportunities for citizens and residents alike.
+      The Vision focuses on innovation, sustainability, and global leadership.
+    </p>
+
+    <h2>Our Goals</h2>
+    <ul>
+      <li>Build a thriving economy driven by innovation and technology.</li>
+      <li>Empower Saudi youth to lead globally in science, culture, and entrepreneurship.</li>
+      <li>Preserve the environment through sustainable projects and renewable energy.</li>
+      <li>Enhance quality of life for all residents and visitors.</li>
+    </ul>
+  </div>
+
+  <div class="about-image">
+    <img src="{% static 'images/vision-header.png' %}" alt="Vision 2030 Overview">
+  </div>
+</section>
+
+<section class="about-values">
+  <h2>Core Values</h2>
+  <div class="values-grid">
+    <div class="value-card">
+      <h3>Innovation</h3>
+      <p>Driving progress through creativity and cutting-edge technology.</p>
+    </div>
+    <div class="value-card">
+      <h3>Sustainability</h3>
+      <p>Building an environmentally responsible and balanced future.</p>
+    </div>
+    <div class="value-card">
+      <h3>Excellence</h3>
+      <p>Achieving world-class standards in all sectors.</p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

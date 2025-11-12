@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" data-theme="{{ theme }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Anton&family=Caprasimo&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Anton&family=Caprasimo&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <title>{% block title %}Saudi Vision 2030{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="{% if theme == 'dark' %}dark-mode{% endif %}">
+
+
+    <header class="site-header">
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Saudi Vision Logo">
+            <h1>Saudi Vision 2030</h1>
+        </div>
+        <nav>
+            <a href="{% url 'home_view' %}">Home</a>
+            <a href="{% url 'about_view' %}">About</a>
+            <a href="{% url 'contact_us_view' %}">Contact Us</a>
+            <!-- <a href="{% url 'innovation_technology_view' %}">Innovation</a>
+            <a href="{% url 'neom_view' %}">NEOM</a> -->
+        </nav>
+        <form method="post" action="{% url 'toggle_theme' %}">
+            {% csrf_token %}
+            <button type="submit" class="theme-btn">
+                {% if theme == 'dark' %}☀️ Light Mode{% else %}🌙 Dark Mode{% endif %}
+            </button>
+        </form>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Saudi Vision 2030 — Designed by Abdullrahman</p>
+    </footer>
+</body>
+</html>
